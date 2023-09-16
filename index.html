@@ -1,38 +1,85 @@
-<!doctype html> <!--Allgemeine Präambel in jedem html Dokument.-->
-<html lang="en-US"> <!--"Root Element": Umschließt das gesamte Dokument. "lang" legt die Hauptsprache fest.-->
-  <head> <!--"Head Element": enthält alle Elemente und Informationen für das Dokument, die NICHT auf der Website ersichtlich sind.-->
-    <meta charset="utf-8" /> <!--"charset" stellt mit utf-8 alle üblichen Schriftseiten zur Verfügung.-->
-    <meta name="viewport" content="width=device-width" /> <!--"viewport" stellt sicher, dass die Seite nach den Maßen des bildschirms rendert.-->
-    <link href="styles/style.css" rel="stylesheet" /> <!--Greift auf das css style-file zu.-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" /> <!--Macht die fontfamily open sans zugänglich.-->
-    <title>Familienmusik Huber!</title> <!--"titel" setzt den Titel der Seite fest, der im Browsertab erscheint.-->
-  </head>
-  <body> <!--"body" enthält alle Elemente, die auf der Website für Webuser sichtbar sind.-->
-    <h1>Familienmusik Huber</h1> <!--"h1" ist der Tag für ein heading Element der Ebene 1-->
-    <h2>Begrüßung</h2>
-    <p>Das ist ein Foto der Familienmusik Huber.</p> 
-      <!--Das ist ein Kommentar in hmtl. Der Tag <p> steht für "paragraph". Die ganze Zeile ist ein "Element"-->
-    <p class="main_paragraph">Das ist ein paragraph mit Text über die Familienmusik HUber, der als main paragraph klassifiziert ist und somit als Klasse bearbeitet werden kann.</p>
-      <!--Ein Tag kann einer Klasse zugeordnet werden. Solche Elemente nennt man "Attribute".-->
-    <p class="main_paragraph">Elemente können auch von hundegullasch <strong>verschachtelt</strong> werden. Das nennt man "nesting".</p>
-    <p class="list">Bei der Familienmusik Huber spielen</p>
-      <ul> <!--"ul" oder "ol" sind die Tags für ungeordnete oder geordnete Listen.-->
-        <li>Andreas</li>
-        <li>Judith</li>
-        <li>Leah</li>
-        <li>Samuel</li>
-        <li>Elias</li>
-        <li>Esther</li>
-      </ul>
-    <a href="https://www.youtube.com/watch?v=U691YPUDKCU">Video</a>
-      <!--"a" steht für "anchor" und erlaubt es, links einzubetten.-->
-    <img src="images/DSC00235.jpg" alt="Ein Foto der Familienmusik Huber vor einer Bergkulisse."/>
-      <!--Das ist ein "void element". Das bedeutet, dass das Elemtent zwar verschiedene Attirbute hat (wie z.B. source) aber keinen Inhalt. "alt" bedeutet "alternative attribute"-->
-    
-    <button>Change user</button>
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+  <title>Familienmusik Huber</title>
+
+  <link rel="stylesheet" href="styles/style_general.css">
+
+  <meta charset="utf-8">
+  <meta name="description" content="Authentische alpenländische Volksmusik">
+  <meta name="author" content="Samuel Sebastian Huber, Elias Gabriel Huber">
+</head>
+
+<body>
+
+  <header>
+
+  </header>
+
+  <nav>
+
+  </nav>
+
+  <section id="heading" class="section_heading">
+    <h1>
+      Familienmusik Huber
+    </h1>
+    <hr class="section_divider">
+    <p>
+      Das ist eine kurze Beschreibung der Familienmusik Huber.
+    </p>
+  </section>
+
+  <section id="about" class="section_about">
+    <h2>Über uns</h2>
+    <hr class="section_divider">
+    <p>
+      Hier steht eine Beschreibung der Familienmusik Huber. 
+    </p>
+    <img src="images/DSC00235.jpg" alt="Familienmusik Huber Foto" class="img_about_center">
+  </section>
+
+  <section id="music" class="section_music">
+    <h2>Unsere Musik</h2>
+    <hr class="section_divider">
+    <p>
+      Hier findet man eine Beschreibung zu unsere Musik mit Tonbeispielen. 
+    </p>
+  </section>
+
+  <section id="cd" class="section_cd">
+    <h2>CD's</h2>
+    <hr class="section_divider">
+    <p>
+      Hier findet man eine Übersicht über unsere CD's.
+    </p>
+  </section>
+
+  <section id="media" class="section_media">
+    <h2>Fotos</h2>
+    <hr class="section_divider">
+    <p>
+      Hier findet man verschiedene Fotos der Familienmusik Huber. 
+    </p>
+  </section>
+
+  <section id="dates" class="section_dates">
+    <h2>Termine</h2>
+    <hr class="section_divider">
+    <p>
+      Hier werden unsere Termine aufgelistet
+    </p>
+  </section>
+
+  <section id="contact" class="section_contact">
+    <h2>Kontakt</h2>
+    <hr class="section_divider">
+    <p>
+      Hier findet man unsere Kontaktdaten.
+    </p>
+  </section>
 
 
-
-    <script src="scripts/main.js"></script>
-  </body>
-</html>
+</body>
