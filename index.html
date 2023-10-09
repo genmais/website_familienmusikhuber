@@ -1,38 +1,106 @@
-<!doctype html> <!--Allgemeine Präambel in jedem html Dokument.-->
-<html lang="en-US"> <!--"Root Element": Umschließt das gesamte Dokument. "lang" legt die Hauptsprache fest.-->
-  <head> <!--"Head Element": enthält alle Elemente und Informationen für das Dokument, die NICHT auf der Website ersichtlich sind.-->
-    <meta charset="utf-8" /> <!--"charset" stellt mit utf-8 alle üblichen Schriftseiten zur Verfügung.-->
-    <meta name="viewport" content="width=device-width" /> <!--"viewport" stellt sicher, dass die Seite nach den Maßen des bildschirms rendert.-->
-    <link href="styles/style.css" rel="stylesheet" /> <!--Greift auf das css style-file zu.-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" /> <!--Macht die fontfamily open sans zugänglich.-->
-    <title>Familienmusik Huber!</title> <!--"titel" setzt den Titel der Seite fest, der im Browsertab erscheint.-->
-  </head>
-  <body> <!--"body" enthält alle Elemente, die auf der Website für Webuser sichtbar sind.-->
-    <h1>Familienmusik Huber</h1> <!--"h1" ist der Tag für ein heading Element der Ebene 1-->
-    <h2>Begrüßung</h2>
-    <p>Das ist ein Foto der Familienmusik Huber.</p> 
-      <!--Das ist ein Kommentar in hmtl. Der Tag <p> steht für "paragraph". Die ganze Zeile ist ein "Element"-->
-    <p class="main_paragraph">Das ist ein paragraph mit Text über die Familienmusik HUber, der als main paragraph klassifiziert ist und somit als Klasse bearbeitet werden kann.</p>
-      <!--Ein Tag kann einer Klasse zugeordnet werden. Solche Elemente nennt man "Attribute".-->
-    <p class="main_paragraph">Elemente können auch von hundegullasch <strong>verschachtelt</strong> werden. Das nennt man "nesting".</p>
-    <p class="list">Bei der Familienmusik Huber spielen</p>
-      <ul> <!--"ul" oder "ol" sind die Tags für ungeordnete oder geordnete Listen.-->
-        <li>Andreas</li>
-        <li>Judith</li>
-        <li>Leah</li>
-        <li>Samuel</li>
-        <li>Elias</li>
-        <li>Esther</li>
-      </ul>
-    <a href="https://www.youtube.com/watch?v=U691YPUDKCU">Video</a>
-      <!--"a" steht für "anchor" und erlaubt es, links einzubetten.-->
-    <img src="images/DSC00235.jpg" alt="Ein Foto der Familienmusik Huber vor einer Bergkulisse."/>
-      <!--Das ist ein "void element". Das bedeutet, dass das Elemtent zwar verschiedene Attirbute hat (wie z.B. source) aber keinen Inhalt. "alt" bedeutet "alternative attribute"-->
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+  <title>Familienmusik Huber</title>
+
+  <link rel="stylesheet" href="styles/style_general.css">
+
+  <meta charset="utf-8">
+  <meta name="description" content="Authentische alpenländische Volksmusik">
+  <meta name="author" content="Samuel Sebastian Huber, Elias Gabriel Huber">
+</head>
+
+<body>
+
+  <header>
+
+  </header>
+
+  <nav>
+  <nav id="navbar" class="navbar">
+
+  </nav>
+    <a id="navbarheading" href="#front" class="nav_element">Familienmusik Huber</a>
+    <a href="#about" class="nav_element">Über uns</a>
+    <a href="#contact" class="nav_element">Kontakt</a>
+
+  <section id="heading" class="section_heading">
+    <h1>
+      Das ist eine kurze Beschreibung der Familienmusik Huber.
+    </p>
+  </section>
+  </nav>
+
+  <section id="about" class="section_about">
+    <h2>Über uns</h2>
+    <p>
+      Hier findet man eine Beschreibung zu unsere Musik mit Tonbeispielen. 
+    </p>
+  <section id="front" class=" section section_front">
     
-    <button>Change user</button>
+  </section>
+
+  <section id="cd" class="section_cd">
+    <h2>CD's</h2>
+  <section id="about" class="section section_about">
+    <h2 class="section_content_h2">Über uns</h2>
+    <hr class="section_divider">
+    <p>
+      Hier findet man eine Übersicht über unsere CD's.
+    <p class="section_content_paragraph">
+      Wann wir damit begonnen haben gemeinsam zu musizieren, wissen wir nicht mehr.
+      Man könnte fast schon sagen, es ist einfach passiert. 
+      Der Grundstein war durch frühes gemeinsames Singen gelegt, nach und nach stießen erste Streichertöne hinzu. 
+      Kleinere Familienfeiern, Kindergottesdienste oder einfach nur regnerische Nachmittage boten früh Gelegenheit, 
+      uns auszuprobieren. <br>
+      Als wir 2010 zum ersten Mal die Alpenländische Sing- und Musizierwoche am Ritten besuchten, 
+      zog uns die Alpenländische Volksmusik endgültig in ihren Bann und wir begannen, regelmäßiger und intensiver 
+      als Familie zu musizieren. 
+      Nach unseren jeweiligen Möglichkeiten und Fähigkeiten weiteten wir Besetzung und Repertoire aus und 
+      so wie die Kinder wuchsen auch Fertigkeiten und Begeisterung. <br>
+      Die Woche am Ritten wurde zum Pflichttermin. Gerade dort haben wir nämlich im Laufe der Zeit 
+      unsere wichtigsten musikalischen Wegbegleiter gefunden und enge Freundschaften geknüpft. 
+      Genauso angetan hat es uns der Alpenländische Volksmusikwettbewerb, an dem wir 2016 teilnehmen durften 
+      und im Rahmen dessen wir zu unserer großen Freude und Überraschung mit dem Herma-Haselsteiner-Preis ausgezeichnet wurden. <br> <br>
+      In der Zeit danach konnten wir bei zahlreichen größeren Veranstaltungen mitwirken. 
+      Gerade nun, da wir begannen uns örtlich voneinander zu entfernen und das regelmäßige 
+      gemeinsame Musizieren seltener und schwieriger wurde, boten diese besondere und willkommene Gelegenheit, 
+      unser Repertoire zu erweitern und immer wieder neue
+      Besetzungen auszuprobieren. <br>
+      Im Laufe der Jahre konnten wir als Familienmusik zahlreiche Erfahrungen machen und Erinnerungen sammeln, 
+      die uns immer weiter zusammen- und aneinander wachsen ließen. 
+      Gemeinsame Ausflüge, Spielereien, Seminare und ausgedehnte Autofahrten, vollbeladen mit Instrumenten, bleiben wohl unvergesslich! <br>
+      Wir sind dankbar für die vielen gemeinsamen musikalischen Erlebnisse und freuen uns auf viele weitere!  
+    </p>
+  </section>
 
 
+    <p>
+      Hier findet man verschiedene Fotos der Familienmusik Huber. 
+    </p>
+  <section id="picture_1" class="section section_picture">
+  </section>
 
-    <script src="scripts/main.js"></script>
-  </body>
+  <section id="dates" class="section_dates">
+
+
+  <section id="contact" class="section_contact">
+    <h2>Kontakt</h2>
+  <section id="contact" class="section section_contact">
+    <h2 class="section_content_h2">Kontakt</h2>
+    <hr class="section_divider">
+    <p>
+    <p class="section_content_paragraph">
+      Hier findet man unsere Kontaktdaten.
+    </p>
+  </section>
+
+  
+
+</body>
+
+</body>
+</body>
 </html>
