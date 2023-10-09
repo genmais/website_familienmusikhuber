@@ -74,9 +74,7 @@ body {
 /*Images General Classes*/ 
 /* § Section Specific Classes*/
 
-.section_content_h2 {
 
-}
 
 /*Images Specific Classes*/ 
 .img_about_center {
@@ -221,5 +219,6 @@ a {
 }
 
 .nav_element:active {
-    background: rgb(226, 226, 226)
+    background: rgb(226, 226, 226);
+}
 }
