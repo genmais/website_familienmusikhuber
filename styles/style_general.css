@@ -38,7 +38,6 @@ body {
 
     padding: var(--navbar_height);
 
-/*Section General Classes*/
     text-align: center;
 }
 
@@ -46,44 +45,6 @@ body {
     width: 80%;
     margin-right: 20%;
     
-}
-
-
-/*Section Specific Classes*/
-.section_picture{
-    height: 100vh;
-
-    background-image: url(../images/DSC01317.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-
-.section_front{
-    height: calc(100vh - var(--navbar_height));
-
-    background-image: url(../images/DSC00235.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-
-/*Images General Classes*/ 
-/* § Section Specific Classes*/
-
-
-
-/*Images Specific Classes*/ 
-.img_about_center {
-.section_content_img {
-    display: block;
-    text-align: center;
-    width: 30vw;
-    margin-left: auto; 
-    margin-right: auto;
 }
 
 .section_content_paragraph {
@@ -95,42 +56,18 @@ body {
 
 }
 
-.section_content_container {
+#front{
+    height: calc(100vh - var(--navbar_height));
 
-    display: block;
-    width: 90vw;
-    /*height: 90vh;*/
-    margin: auto;
-    
-    border: 1px solid black; 
-
-    display: grid;
-    grid-template-columns: 45% 45%;
-    column-gap: 15px;
-    grid-template-rows: 45% 45%;
-    row-gap: 15px;
-    place-content: center;
-    
-}
-
-/* § Section: front*/
-
-/* $ Section: media*/
-
-.section_media_grid_img {
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
-
-    border: 1px solid black;
+    background-image: url(../images/DSC00235.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
-/* § Images General Classes*/ 
 
 
-
-/* § Images Specific Classes*/ 
 
 
 /* § Navbar*/
@@ -181,8 +118,8 @@ a {
     position: fixed;
     
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: "heading heading heading about music cd media dates contact";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: ". heading about contact .";
     gap: 1vw;  
     justify-items: center; 
     align-items: center; 
@@ -198,7 +135,7 @@ a {
 }
 
 #navbarheading {
-    grid-column: 1/3; 
+    grid-column: heading; 
 }
 
 
@@ -220,5 +157,4 @@ a {
 
 .nav_element:active {
     background: rgb(226, 226, 226);
-}
 }
