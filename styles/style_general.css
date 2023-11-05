@@ -4,8 +4,10 @@
 :root{
     --main_color_1: rgb(241, 241, 241);
     --main_text_color: rgb(0, 0, 0); 
+    --main_font-size_paragraph: 18px; 
 
     --navbar_height: 10vh;
+
 }
 
 html {
@@ -43,7 +45,6 @@ body {
 
 .section_divider{
     width: 80%;
-    margin-right: 20%;
     
 }
 
@@ -51,9 +52,14 @@ body {
     max-width: 70%;
     margin: auto;
     
+    font-size: var(--main_font-size_paragraph);
     text-align: justify;
     line-height: 1.5;
 
+}
+
+.section_content_paragraph {
+    text-align: center;
 }
 
 #front{
@@ -64,6 +70,44 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+
+#picture {
+    height: 100vh;
+    background-image: url(../images/DSC01317.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*Section Specific Classes*/
+
+#contact_iconbar{
+
+    border: 1px solid black;  
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: ". facebook youtube spotify .";
+    gap: 1vw;  
+    justify-items: center; 
+    align-items: center;
+}
+
+#contact_iconbar_facebook{
+    grid-area: facebook; 
+}
+
+#contact_iconbar_youtube{
+    grid-area: youtube; 
+}
+
+#contact_iconbar_spotify{
+    grid-area: spotify; 
+}
+
 
 
 
