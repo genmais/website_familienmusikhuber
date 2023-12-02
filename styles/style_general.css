@@ -4,7 +4,8 @@
 :root{
     --main_color_1: rgb(241, 241, 241);
     --main_text_color: rgb(0, 0, 0); 
-    --main_font-size_paragraph: 18px; 
+    --main_font-size_paragraph: 18px;
+    --main_font-size_paragraph_mobile: 24px;
 
     --navbar_height: 10vh;
 
@@ -81,6 +82,12 @@ body {
     background-attachment: fixed;
 }
 
+#iframe_spotify {
+    border-radius: 12px;
+    width: 70%; 
+    height: 80vh;
+}
+
 
 /*Section Specific Classes*/
 
@@ -109,47 +116,6 @@ body {
 }
 
 
-
-
-
-
-
-/* § Navbar*/
-
-/* Navabr FLEX 
-.navbar {
-    min-height: 1.5rem;
-    width: 100vw;
-    /*margin-left: 5vw;
-    margin-right: 5vw;
-    height: var(--navbar_height);
-
-    border: 1px solid black;
-
-    position: fixed;
-    
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around; 
-    gap: 1%; 
-}
-
-a {
-    flex: 1; 
-    text-decoration: none; 
-    outline: none;
-    line-height: 1.5rem;
-    
-    border: 1px solid black; 
-}
-
-#navbarheading {
-    flex: 5;
-}
-
-*/
-
 /* Navbar GRID */
 
 .navbar {
@@ -158,6 +124,7 @@ a {
     height: var(--navbar_height);
 
     border: 1px solid black;
+    background-color: var(--main_color_1);
 
     position: fixed;
     
@@ -173,7 +140,7 @@ a {
 .nav_element {
     text-decoration: none; 
     outline: none;
-    line-height: 1.5rem;
+    line-height: 2rem;
 
     border: 1px solid black; 
 }
@@ -188,7 +155,7 @@ a {
 .nav_element:link,
 .nav_element:visited,
 .nav_element:focus {
-    font-size: 1.3rem;
+    font-size: var(--main_font-size_paragraph);
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
@@ -201,4 +168,39 @@ a {
 
 .nav_element:active {
     background: rgb(226, 226, 226);
+}
+
+
+
+
+
+
+/*MOBILE*/
+
+
+@media screen and (max-width: 1000px) {
+    
+    .section_content_paragraph {
+        max-width: 90%;
+
+        font-size: var(--main_font-size_paragraph_mobile);
+    }
+
+    #front {
+        height: calc(50vh - var(--navbar_height));
+    }
+
+    #picture {
+        height: 50vh; 
+    }
+    
+    #iframe_spotify {
+        width: 90%;
+    }
+
+    .nav_element:link,
+    .nav_element:visited,
+    .nav_element:focus {
+        font-size: var(--main_font-size_paragraph_mobile);
+    }
 }
