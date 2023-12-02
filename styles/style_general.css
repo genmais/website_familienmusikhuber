@@ -5,7 +5,7 @@
     --main_color_1: rgb(241, 241, 241);
     --main_text_color: rgb(0, 0, 0); 
     --main_font-size_paragraph: 18px;
-    --main_font-size_paragraph_mobile: 24px;
+    --main_font-size_paragraph_mobile: 12px;
 
     --navbar_height: 10vh;
 
@@ -129,8 +129,8 @@ body {
     position: fixed;
     
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: ". heading about contact .";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: ". heading about music contact .";
     gap: 1vw;  
     justify-items: center; 
     align-items: center; 
@@ -181,7 +181,7 @@ body {
 @media screen and (max-width: 1000px) {
     
     .section_content_paragraph {
-        max-width: 90%;
+        max-width: 100%;
 
         font-size: var(--main_font-size_paragraph_mobile);
     }
@@ -195,7 +195,8 @@ body {
     }
     
     #iframe_spotify {
-        width: 90%;
+        width: 100%;
+        height: 50vh;
     }
 
     .nav_element:link,
