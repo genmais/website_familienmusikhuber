@@ -85,7 +85,7 @@ body {
 #iframe_spotify {
     border-radius: 12px;
     width: 70%; 
-    height: 80vh;
+    height: 352px;
 }
 
 
@@ -119,7 +119,7 @@ body {
 /* Navbar GRID */
 
 .navbar {
-    min-height: 1.5rem;
+    min-height: 2rem;
     width: 100vw;
     height: var(--navbar_height);
 
@@ -155,7 +155,7 @@ body {
 .nav_element:link,
 .nav_element:visited,
 .nav_element:focus {
-    font-size: var(--main_font-size_paragraph);
+    font-size: 1.5rem;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
@@ -196,12 +196,5 @@ body {
     
     #iframe_spotify {
         width: 100%;
-        height: 50vh;
-    }
-
-    .nav_element:link,
-    .nav_element:visited,
-    .nav_element:focus {
-        font-size: var(--main_font-size_paragraph_mobile);
     }
 }
