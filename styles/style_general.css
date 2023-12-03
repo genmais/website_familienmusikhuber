@@ -4,8 +4,8 @@
 :root{
     --main_color_1: rgb(241, 241, 241);
     --main_text_color: rgb(0, 0, 0); 
-    --main_font-size_paragraph: 18px;
-    --main_font-size_paragraph_mobile: 12px;
+    --main_font-size_paragraph: 1rem;
+    --main_font-size_paragraph_mobile: 1rem;
 
     --navbar_height: 4rem;
 
