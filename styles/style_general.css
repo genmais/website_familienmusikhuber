@@ -174,7 +174,6 @@ body {
 /*Navbar Mobile*/
 
 .navbar_mobile {
-    min-height: 2rem;
     width: 100vw;
     height: var(--navbar_height);
 
