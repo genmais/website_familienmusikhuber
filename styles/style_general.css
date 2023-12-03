@@ -37,7 +37,6 @@ body {
 /* § Section General Classes*/
 
 .section {
-    border: 1px solid black;
 
     padding: var(--navbar_height);
 
@@ -91,9 +90,7 @@ body {
 
 /*Section Specific Classes*/
 
-#contact_iconbar{
-
-    border: 1px solid black;  
+#contact_iconbar{  
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -122,7 +119,6 @@ body {
     width: 100vw;
     height: var(--navbar_height);
 
-    border: 1px solid black;
     background-color: var(--main_color_1);
 
     position: fixed;
@@ -141,8 +137,6 @@ body {
     text-decoration: none; 
     outline: none;
     line-height: 2rem;
-
-    border: 1px solid black; 
 }
 
 #navbar_desktop_heading {
@@ -177,7 +171,6 @@ body {
     width: 100vw;
     height: var(--navbar_height);
 
-    border: 1px solid black;
     background-color: var(--main_color_1);
 
     position: fixed;
@@ -197,8 +190,6 @@ body {
     text-decoration: none; 
     outline: none;
     line-height: 2rem;
-
-    border: 1px solid black;
 
     visibility: hidden; 
 }
