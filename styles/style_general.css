@@ -7,7 +7,7 @@
     --main_font-size_paragraph: 18px;
     --main_font-size_paragraph_mobile: 12px;
 
-    --navbar_height: 10vh;
+    --navbar_height: 4rem;
 
 }
 
@@ -116,10 +116,9 @@ body {
 }
 
 
-/* Navbar GRID */
+/* Navbar Desktop */
 
-.navbar {
-    min-height: 2rem;
+.navbar_desktop {
     width: 100vw;
     height: var(--navbar_height);
 
@@ -133,11 +132,12 @@ body {
     grid-template-areas: ". heading about music contact .";
     gap: 1vw;  
     justify-items: center; 
-    align-items: center; 
+    align-items: center;
 
 }
 
-.nav_element {
+.nav_desk_element {
+    height: 100;
     text-decoration: none; 
     outline: none;
     line-height: 2rem;
@@ -145,16 +145,16 @@ body {
     border: 1px solid black; 
 }
 
-#navbarheading {
+#navbar_desktop_heading {
     grid-column: heading; 
 }
 
 
 
 
-.nav_element:link,
-.nav_element:visited,
-.nav_element:focus {
+.nav_desk_element:link,
+.nav_desk_element:visited,
+.nav_desk_element:focus {
     font-size: 1.5rem;
     text-transform: uppercase;
     text-align: center;
@@ -162,23 +162,77 @@ body {
     color: black;
 }
 
-.nav_element:hover {
+.nav_desk_element:hover {
     background:rgb(207, 207, 207);
 }
 
-.nav_element:active {
+.nav_desk_element:active {
     background: rgb(226, 226, 226);
 }
 
 
+/*Navbar Mobile*/
+
+.navbar_mobile {
+    min-height: 2rem;
+    width: 100vw;
+    height: var(--navbar_height);
+
+    border: 1px solid black;
+    background-color: var(--main_color_1);
+
+    position: fixed;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: ". heading .";
+    gap: 1vw;  
+    justify-items: center; 
+    align-items: center;
+
+    visibility: hidden; 
+
+}
+
+.nav_mob_element {
+    text-decoration: none; 
+    outline: none;
+    line-height: 2rem;
+
+    border: 1px solid black;
+
+    visibility: hidden; 
+}
+
+#navbar_mobile_heading {
+    grid-column: heading; 
+}
 
 
 
+
+.nav_mob_element:link,
+.nav_mob_element:visited,
+.nav_mob_element:focus {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.nav_mob_element:hover {
+    background:rgb(207, 207, 207);
+}
+
+.nav_mob_element:active {
+    background: rgb(226, 226, 226);
+}
 
 /*MOBILE*/
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     
     .section_content_paragraph {
         max-width: 100%;
@@ -196,5 +250,16 @@ body {
     
     #iframe_spotify {
         width: 100%;
+    }
+
+    .navbar_desktop {
+        visibility: hidden;
+    }
+
+    .navbar_mobile {
+        visibility: unset;
+    }
+    #navbar_mobile_heading {
+        visibility: unset;
     }
 }
