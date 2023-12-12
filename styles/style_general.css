@@ -4,12 +4,15 @@
 :root{
     --main_color_1: rgb(241, 241, 241);
     --main_text_color: rgb(0, 0, 0); 
+    --main_font_paragraph: 1rem;
+    --main_font_paragraph_mobile: 1rem;
 
-    --navbar_height: 10vh;
+    --navbar_height: 4rem;
+
 }
 
 html {
-    box-sizing: border-box; /*weiß nicht was es macht*/
+    box-sizing: border-box;
 }
 *, 
 *::before
@@ -23,7 +26,6 @@ body {
     padding: 0;
     overflow-y: scroll;
 	overflow-x: scroll;
-	/*overflow-x: scroll;*/
 	background-color: var(--main_color_1);
 
 	font-family: 'Source Sans Pro', sans-serif;
@@ -31,37 +33,32 @@ body {
     color: var(--main_text_color)
 }
 
+
 /* § Section General Classes*/
 
 .section {
-    border: 1px solid black;
 
     padding: var(--navbar_height);
 
-/*Section General Classes*/
     text-align: center;
 }
 
 .section_divider{
     width: 80%;
-    margin-right: 20%;
     
 }
 
+.section_content_paragraph {
+    max-width: 70%;
+    margin: auto;
+    
+    font-size: var(--main_font_paragraph);
+    text-align: justify;
+    line-height: 1.5;
 
-/*Section Specific Classes*/
-.section_picture{
-    height: 100vh;
-
-    background-image: url(../images/DSC01317.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
-
-.section_front{
+#front{
     height: calc(100vh - var(--navbar_height));
 
     background-image: url(../images/DSC00235.jpg);
@@ -71,154 +68,185 @@ body {
 }
 
 
-/*Images General Classes*/ 
-/* § Section Specific Classes*/
-
-
-
-/*Images Specific Classes*/ 
-.img_about_center {
-.section_content_img {
-    display: block;
-    text-align: center;
-    width: 30vw;
-    margin-left: auto; 
-    margin-right: auto;
+#picture {
+    height: 100vh;
+    background-image: url(../images/DSC01317.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.section_content_paragraph {
-    max-width: 70%;
-    margin: auto;
-    
-    text-align: justify;
-    line-height: 1.5;
-
+#iframe_spotify {
+    border-radius: 12px;
+    width: 70%; 
+    height: 352px;
 }
 
-.section_content_container {
 
-    display: block;
-    width: 90vw;
-    /*height: 90vh;*/
-    margin: auto;
-    
-    border: 1px solid black; 
+/*Section Specific Classes*/
+
+#contact_iconbar{  
 
     display: grid;
-    grid-template-columns: 45% 45%;
-    column-gap: 15px;
-    grid-template-rows: 45% 45%;
-    row-gap: 15px;
-    place-content: center;
-    
-}
-
-/* § Section: front*/
-
-/* $ Section: media*/
-
-.section_media_grid_img {
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
-
-    border: 1px solid black;
-}
-
-
-/* § Images General Classes*/ 
-
-
-
-/* § Images Specific Classes*/ 
-
-
-/* § Navbar*/
-
-/* Navabr FLEX 
-.navbar {
-    min-height: 1.5rem;
-    width: 100vw;
-    /*margin-left: 5vw;
-    margin-right: 5vw;
-    height: var(--navbar_height);
-
-    border: 1px solid black;
-
-    position: fixed;
-    
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around; 
-    gap: 1%; 
-}
-
-a {
-    flex: 1; 
-    text-decoration: none; 
-    outline: none;
-    line-height: 1.5rem;
-    
-    border: 1px solid black; 
-}
-
-#navbarheading {
-    flex: 5;
-}
-
-*/
-
-/* Navbar GRID */
-
-.navbar {
-    min-height: 1.5rem;
-    width: 100vw;
-    height: var(--navbar_height);
-
-    border: 1px solid black;
-
-    position: fixed;
-    
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: "heading heading heading about music cd media dates contact";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: ". facebook youtube spotify .";
     gap: 1vw;  
     justify-items: center; 
-    align-items: center; 
+    align-items: center;
+}
+
+#contact_iconbar_facebook{
+    grid-area: facebook; 
+}
+
+#contact_iconbar_youtube{
+    grid-area: youtube; 
+}
+
+#contact_iconbar_spotify{
+    grid-area: spotify; 
+}
+
+
+/* Navbar Desktop */
+
+.navbar_desktop {
+    width: 100vw;
+    height: var(--navbar_height);
+
+    background-color: var(--main_color_1);
+
+    position: fixed;
+    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: ". heading about music contact .";
+    gap: 1vw;  
+    justify-items: center; 
+    align-items: center;
 
 }
 
-.nav_element {
+.nav_desk_element {
+    height: 100;
     text-decoration: none; 
     outline: none;
-    line-height: 1.5rem;
-
-    border: 1px solid black; 
+    line-height: 2rem;
 }
 
-#navbarheading {
-    grid-column: 1/3; 
+#navbar_desktop_heading {
+    grid-column: heading; 
 }
 
 
 
 
-.nav_element:link,
-.nav_element:visited,
-.nav_element:focus {
-    font-size: 1.3rem;
+.nav_desk_element:link,
+.nav_desk_element:visited,
+.nav_desk_element:focus {
+    font-size: 1.5rem;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
     color: black;
 }
 
-.nav_element:hover {
+.nav_desk_element:hover {
     background:rgb(207, 207, 207);
 }
 
-.nav_element:active {
+.nav_desk_element:active {
     background: rgb(226, 226, 226);
 }
+
+
+/*Navbar Mobile*/
+
+.navbar_mobile {
+    width: 100vw;
+    height: var(--navbar_height);
+
+    background-color: var(--main_color_1);
+
+    position: fixed;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: ". heading .";
+    gap: 1vw;  
+    justify-items: center; 
+    align-items: center;
+
+    visibility: hidden; 
+
+}
+
+.nav_mob_element {
+    text-decoration: none; 
+    outline: none;
+    line-height: 2rem;
+
+    visibility: hidden; 
+}
+
+#navbar_mobile_heading {
+    grid-column: heading; 
+}
+
+
+
+
+.nav_mob_element:link,
+.nav_mob_element:visited,
+.nav_mob_element:focus {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.nav_mob_element:hover {
+    background:rgb(207, 207, 207);
+}
+
+.nav_mob_element:active {
+    background: rgb(226, 226, 226);
+}
+
+
+/*MOBILE*/
+
+
+@media screen and (max-width: 1024px) {
+    
+    .section_content_paragraph {
+        max-width: 100%;
+
+        font-size: var(--main_font_paragraph_mobile);
+    }
+
+    #front {
+        height: calc(50vh - var(--navbar_height));
+    }
+
+    #picture {
+        height: 50vh; 
+    }
+    
+    #iframe_spotify {
+        width: 100%;
+    }
+
+    .navbar_desktop {
+        visibility: hidden;
+    }
+
+    .navbar_mobile {
+        visibility: unset;
+    }
+    #navbar_mobile_heading {
+        visibility: unset;
+    }
 }
