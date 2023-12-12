@@ -4,15 +4,15 @@
 :root{
     --main_color_1: rgb(241, 241, 241);
     --main_text_color: rgb(0, 0, 0); 
-    --main_font-size_paragraph: 1rem;
-    --main_font-size_paragraph_mobile: 1rem;
+    --main_font_paragraph: 1rem;
+    --main_font_paragraph_mobile: 1rem;
 
     --navbar_height: 4rem;
 
 }
 
 html {
-    box-sizing: border-box; /*weiß nicht was es macht*/
+    box-sizing: border-box;
 }
 *, 
 *::before
@@ -26,13 +26,13 @@ body {
     padding: 0;
     overflow-y: scroll;
 	overflow-x: scroll;
-	/*overflow-x: scroll;*/
 	background-color: var(--main_color_1);
 
 	font-family: 'Source Sans Pro', sans-serif;
 	font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
     color: var(--main_text_color)
 }
+
 
 /* § Section General Classes*/
 
@@ -52,14 +52,10 @@ body {
     max-width: 70%;
     margin: auto;
     
-    font-size: var(--main_font-size_paragraph);
+    font-size: var(--main_font_paragraph);
     text-align: justify;
     line-height: 1.5;
 
-}
-
-.section_content_paragraph {
-    text-align: center;
 }
 
 #front{
@@ -219,6 +215,7 @@ body {
     background: rgb(226, 226, 226);
 }
 
+
 /*MOBILE*/
 
 
@@ -227,7 +224,7 @@ body {
     .section_content_paragraph {
         max-width: 100%;
 
-        font-size: var(--main_font-size_paragraph_mobile);
+        font-size: var(--main_font_paragraph_mobile);
     }
 
     #front {
